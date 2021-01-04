@@ -10,7 +10,8 @@ const mongoose=require('mongoose')
 const session=require('express-session')
 const passport=require('passport')
 const autho=require('./routes/autho')(passport)
-mongoose.connect('mongodb://localhost:27017/login',{useNewUrlParser: true, useUnifiedTopology: true})
+const mongoURL=require('./configuration/conf')
+mongoose.connect(mongoURL,{useNewUrlParser: true, useUnifiedTopology: true})
 
 
 // view engine setup
