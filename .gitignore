@@ -3,7 +3,7 @@
 .pnp.js
 /build
 
-
+/bin
 prod.js
 
 npm-debug.log*
